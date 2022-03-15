@@ -10,6 +10,7 @@ let emailList = [
 
 let userMail = prompt("Inserisci la tua Email:");
 var registrated = false;
+let container = document.getElementById("container");
 
 for( i=0 ; i < emailList.length ; i++ ) {
 
@@ -22,8 +23,8 @@ for( i=0 ; i < emailList.length ; i++ ) {
 
 };
 if(registrated == true){
-    console.log("La tua Email è registrata.");
+    container.innerHTML = ("La tua Email è registrata.");
 }
 else{
-    console.log("La tua Email non è registrata.");
+    container.innerHTML = ("La tua Email non è registrata.");
 }
